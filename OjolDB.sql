@@ -4,14 +4,48 @@ GO
 USE OjolDB;
 GO */
 
-CREATE TABLE driver (
+/* CREATE TABLE driver (
 	id_driver INT IDENTITY(1,1) PRIMARY KEY,
 	nama_driver VARCHAR(100) NOT NULL,
 	jenis_kelamin VARCHAR(20) NOT NULL,
 	no_hp VARCHAR(20) NOT NULL UNIQUE,
-	jenis_kendaraaan VARCHAR(50) NOT NULL, 
-	plat_nomor VARCHAR(15) NOT NULL,
+	jenis_kendaraan VARCHAR(50) NOT NULL, 
+	plat_nomor VARCHAR(15) NOT NULL UNIQUE,
 	status_driver VARCHAR(20) NOT NULL,
 	tanggal_daftar DATE NOT NULL 
 );
-GO
+GO */
+
+/* DROP TABLE driver;
+GO */
+
+/* INSERT INTO driver
+    (nama_driver, jenis_kelamin, no_hp, jenis_kendaraan, plat_nomor, status_driver, tanggal_daftar)
+VALUES
+    ('Andi Saputra', 'Laki-laki', '081234567801', 'Motor', 'B 1234 ABC', 'Aktif', '2026-01-10'),
+
+    ('Budi Santoso', 'Laki-laki', '081234567802', 'Motor', 'B 2345 DEF', 'Aktif', '2026-01-15'),
+
+    ('Citra Lestari', 'Perempuan', '081234567803', 'Motor', 'B 3456 GHI', 'Aktif', '2026-02-01'),
+
+    ('Dedi Kurniawan', 'Laki-laki', '081234567804', 'Mobil', 'B 4567 JKL', 'Nonaktif', '2026-02-10'),
+
+    ('Eka Pratama', 'Laki-laki', '081234567805', 'Motor', 'B 5678 MNO', 'Aktif', '2026-02-20');
+GO */
+
+/* SELECT * FROM driver; */
+
+/* SELECT * 
+FROM driver 
+WHERE status_driver = 'Aktif'; */
+
+/* SELECT * 
+FROM driver 
+WHERE jenis_kendaraan = 'Mobil'; */
+
+/* UPDATE driver 
+SET status_driver = 'Aktif'
+WHERE id_driver = 4; */ 
+
+/* SELECT * FROM driver 
+ORDER BY nama_driver ASC; */
