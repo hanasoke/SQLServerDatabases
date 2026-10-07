@@ -57,7 +57,7 @@ VALUES
     ('Hanas Bayu Pratama', 'Laki-laki', '085819536158', 'Mobil', 'B 5478 HAN', 'Aktif', '2026-01-10');
 GO */ 
 
-SELECT * FROM driver; 
+SELECT * FROM driver;
 
 /* Menghapus semua data tabel */  
 /* DELETE FROM driver; */ 
@@ -72,3 +72,6 @@ VALUES
     ('Mitsuba AOI', 'Motor', '085819536157', 'Mobil', 'B 8374 AOI', 'Aktif', '2026-01-10');
 GO */
 
+/* UPDATE driver 
+SET jenis_kelamin = 'Perempuan'
+WHERE nama_driver = 'Mitsuba AOI'; */
