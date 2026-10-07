@@ -57,10 +57,18 @@ VALUES
     ('Hanas Bayu Pratama', 'Laki-laki', '085819536158', 'Mobil', 'B 5478 HAN', 'Aktif', '2026-01-10');
 GO */ 
 
-SELECT * FROM driver;
+SELECT * FROM driver; 
 
 /* Menghapus semua data tabel */  
 /* DELETE FROM driver; */ 
 
 /* DELETE FROM driver 
 WHERE id_driver = 7; */
+
+/* INSERT INTO driver
+    (nama_driver, jenis_kelamin, no_hp, jenis_kendaraan, plat_nomor, status_driver, tanggal_daftar)
+VALUES
+	('Nakano Miku', 'Perempuan', '085813536228', 'Motor', 'B 5474 TUK', 'Aktif', '2026-04-04'),
+    ('Mitsuba AOI', 'Motor', '085819536157', 'Mobil', 'B 8374 AOI', 'Aktif', '2026-01-10');
+GO */
+
