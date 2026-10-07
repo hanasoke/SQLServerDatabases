@@ -49,3 +49,18 @@ WHERE id_driver = 4; */
 
 /* SELECT * FROM driver 
 ORDER BY nama_driver ASC; */
+
+/* INSERT INTO driver
+    (nama_driver, jenis_kelamin, no_hp, jenis_kendaraan, plat_nomor, status_driver, tanggal_daftar)
+VALUES
+	('Suryadarma', 'Laki-laki', '085813536258', 'Mobil', 'B 5478 TUK', 'Nonaktif', '2026-04-04'),
+    ('Hanas Bayu Pratama', 'Laki-laki', '085819536158', 'Mobil', 'B 5478 HAN', 'Aktif', '2026-01-10');
+GO */ 
+
+SELECT * FROM driver;
+
+/* Menghapus semua data tabel */  
+/* DELETE FROM driver; */ 
+
+/* DELETE FROM driver 
+WHERE id_driver = 7; */
