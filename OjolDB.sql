@@ -57,7 +57,7 @@ VALUES
     ('Hanas Bayu Pratama', 'Laki-laki', '085819536158', 'Mobil', 'B 5478 HAN', 'Aktif', '2026-01-10');
 GO */ 
 
-SELECT * FROM driver;
+/* SELECT * FROM driver; */
 
 /* Menghapus semua data tabel */  
 /* DELETE FROM driver; */ 
@@ -75,3 +75,40 @@ GO */
 /* UPDATE driver 
 SET jenis_kelamin = 'Perempuan'
 WHERE nama_driver = 'Mitsuba AOI'; */
+
+/* CREATE TABLE pegawai (
+	id_pegawai INT IDENTITY(1,1) PRIMARY KEY,
+	nama_pegawai VARCHAR(100) NOT NULL, 
+	jenis_kelamin VARCHAR(20) NOT NULL, 
+	jabatan VARCHAR(50) NOT NULL,
+	no_hp VARCHAR(20) NOT NULL UNIQUE,
+	alamat VARCHAR(200),
+	status_pegawai VARCHAR(20) NOT NULL,
+);
+GO */
+
+/* INSERT INTO pegawai
+    (nama_pegawai, jenis_kelamin, jabatan, no_hp, alamat, status_pegawai)
+VALUES
+    ('Andi Saputra', 'Laki-laki', 'Admin', '081234567801', 'Bekasi', 'Aktif'),
+
+    ('Budi Santoso', 'Laki-laki', 'Customer Service', '081234567802', 'Jakarta', 'Aktif'),
+
+    ('Citra Lestari', 'Perempuan', 'Finance', '081234567803', 'Depok', 'Aktif'),
+
+    ('Dewi Anggraini', 'Perempuan', 'HRD', '081234567804', 'Bogor', 'Aktif'),
+
+    ('Eko Pratama', 'Laki-laki', 'IT Support', '081234567805', 'Tangerang', 'Nonaktif');
+GO */
+
+/* SELECT * FROM pegawai; */
+
+/* SELECT * FROM pegawai 
+WHERE status_pegawai = 'Aktif'; */
+
+/* SELECT * FROM pegawai 
+WHERE jabatan = 'Admin'; */
+
+/* SELECT *
+FROM pegawai
+WHERE nama_pegawai LIKE '%Andi%'; */
