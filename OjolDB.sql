@@ -117,6 +117,21 @@ WHERE nama_pegawai LIKE '%Andi%'; */
 SET status_pegawai = 'Aktif'
 WHERE id_pegawai = 5; */
 
-SELECT * 
+/* SELECT * 
 FROM pegawai 
-WHERE id_pegawai = 5;
+WHERE id_pegawai = 5; */
+
+/* UPDATE pegawai 
+SET jabatan = 'Supervisor'
+WHERE id_pegawai = 2; */
+
+SELECT * FROM pegawai;
+
+/* INSERT INTO pegawai
+    (nama_pegawai, jenis_kelamin, jabatan, no_hp, alamat, status_pegawai)
+VALUES
+    ('ASASAS', 'Laki-laki', 'Programmer', '081234562301', 'Bekasi', 'Aktif')
+GO */ 
+
+/* DELETE FROM pegawai
+WHERE nama_pegawai LIKE '%ASASAS%'; */
