@@ -112,3 +112,11 @@ WHERE jabatan = 'Admin'; */
 /* SELECT *
 FROM pegawai
 WHERE nama_pegawai LIKE '%Andi%'; */
+
+/* UPDATE pegawai 
+SET status_pegawai = 'Aktif'
+WHERE id_pegawai = 5; */
+
+SELECT * 
+FROM pegawai 
+WHERE id_pegawai = 5;
