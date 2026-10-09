@@ -125,7 +125,7 @@ WHERE id_pegawai = 5; */
 SET jabatan = 'Supervisor'
 WHERE id_pegawai = 2; */
 
-SELECT * FROM pegawai;
+/* SELECT * FROM pegawai; */
 
 /* INSERT INTO pegawai
     (nama_pegawai, jenis_kelamin, jabatan, no_hp, alamat, status_pegawai)
@@ -135,3 +135,23 @@ GO */
 
 /* DELETE FROM pegawai
 WHERE nama_pegawai LIKE '%ASASAS%'; */
+
+/* Reset tabel driver dan buat table dengan variable yang sedikit berbeda */
+/* DROP TABLE IF EXISTS driver;
+GO */
+
+/* CREATE TABLE driver (
+    id_driver INT IDENTITY(1,1) PRIMARY KEY,
+    nama_driver VARCHAR(100) NOT NULL, 
+    no_hp VARCHAR(20) NOT NULL UNIQUE,
+    plat_nomor VARCHAR(15) NOT NULL UNIQUE,
+    jenis_kendaraan VARCHAR(20) NOT NULL, 
+    status_driver VARCHAR(20) NOT NULL, 
+    id_pegawai INT NOT NULL,
+
+    CONSTRAINT FK_driver_pegawai 
+        FOREIGN KEY (id_pegawai)
+        REFERENCES pegawai(id_pegawai)
+);
+GO */
+
