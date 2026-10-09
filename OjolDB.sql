@@ -155,3 +155,42 @@ GO */
 );
 GO */
 
+/* INSERT INTO driver 
+    (nama_driver, no_hp, plat_nomor, 
+    jenis_kendaraan, status_driver, id_pegawai)
+VALUES 
+    ('Rizky Pratama', '082111111111', 'B 1234 ABC', 'Motor', 'Aktif', 1),
+     ('Fajar Nugraha', '082222222222', 'B 2345 DEF', 'Motor', 'Aktif', 1),
+    ('Siti Amelia',   '082333333333', 'B 3456 GHI', 'Motor', 'Aktif', 2),
+    ('Doni Saputra',  '082444444444', 'B 4567 JKL', 'Mobil', 'Aktif', 2),
+    ('Rian Setiawan', '082555555555', 'B 5678 MNO', 'Motor', 'Nonaktif', 3);
+GO */
+
+SELECT
+    d.id_driver,
+    d.nama_driver,
+    d.plat_nomor,
+    d.jenis_kendaraan,
+    d.status_driver,
+    p.nama_pegawai,
+    p.jabatan
+FROM driver AS d
+INNER JOIN pegawai AS p
+    ON d.id_pegawai = p.id_pegawai;
+
+/* INSERT INTO driver 
+    (nama_driver, no_hp, plat_nomor,
+    jenis_kendaraan, status_driver, id_pegawai)
+VALUES 
+    ('Agus Firmansyah', '082666666666', 'B 6789 PQR', 'Motor', 'Aktif', 4); */
+
+/* UPDATE driver
+SET id_pegawai = 3
+WHERE id_driver = 1; */
+
+/* SELECT d.nama_driver, p.nama_pegawai
+FROM driver AS d
+JOIN pegawai AS p
+    ON d.id_pegawai = p.id_pegawai
+WHERE p.id_pegawai = 1; */
+
