@@ -176,7 +176,7 @@ SELECT
     p.jabatan
 FROM driver AS d
 INNER JOIN pegawai AS p
-    ON d.id_pegawai = p.id_pegawai;
+    ON d.id_pegawai = p.id_pegawai; 
 
 /* INSERT INTO driver 
     (nama_driver, no_hp, plat_nomor,
@@ -194,3 +194,5 @@ JOIN pegawai AS p
     ON d.id_pegawai = p.id_pegawai
 WHERE p.id_pegawai = 1; */
 
+/* DELETE FROM driver
+WHERE id_driver = 5; */
