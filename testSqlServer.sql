@@ -1,1 +1,1 @@
-create database testSSqlServer
+CREATE DATABASE testSqlServer;
