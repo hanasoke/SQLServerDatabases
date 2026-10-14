@@ -1,1 +1,1 @@
-CREATE DATABASE testSqlServer;
+/* CREATE DATABASE testSqlServer; */
