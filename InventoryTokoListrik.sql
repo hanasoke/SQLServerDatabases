@@ -17,6 +17,6 @@ GO */
 /* CREATE USER inventory_app FOR LOGIN inventory_app;
 GO */
 
-ALTER ROLE db_datareader ADD MEMBER inventory_app;
+/* ALTER ROLE db_datareader ADD MEMBER inventory_app;
 ALTER ROLE db_datawriter ADD MEMBER inventory_app;
-GO
+GO */
