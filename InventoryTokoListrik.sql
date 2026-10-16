@@ -11,12 +11,14 @@ GO */
 WITH PASSWORD = 'lighttools';
 GO */
 
-/* USE InventoryTokoListrik;
-GO */
+USE InventoryTokoListrik;
 
 /* CREATE USER inventory_app FOR LOGIN inventory_app;
 GO */
 
-/* ALTER ROLE db_datareader ADD MEMBER inventory_app;
+/*ALTER ROLE db_datareader ADD MEMBER inventory_app;
 ALTER ROLE db_datawriter ADD MEMBER inventory_app;
 GO */
+
+ALTER ROLE db_owner ADD MEMBER inventory_app;
+GO
