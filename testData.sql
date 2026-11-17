@@ -45,3 +45,46 @@
 --WHERE id = 5;
 
 --SELECT * FROM employees;
+
+--CREATE TABLE books (
+--	id INT IDENTITY(1,1) PRIMARY KEY,
+--	isbn VARCHAR(20) NOT NULL,
+--	title VARCHAR(150) NOT NULL, 
+--	author VARCHAR(100) NOT NULL,
+--	publisher VARCHAR(100),
+--	publication_year INT,
+--	price DECIMAL(18,2),
+
+--	CONSTRAINT UQ_books_isbn UNIQUE(isbn),
+--	CONSTRAINT UQ_books_title UNIQUE (title)
+--);
+
+--INSERT INTO books 
+--(isbn, title, author, publisher, publication_year, price)
+--VALUES 
+--('9786020324784', 'Belajar SQL Server', 'Andi', 'Gramedia', 2024, 85000),
+--('9786020324785', 'Belajar Laravel', 'Budi', 'Elex Media', 2025, 95000),
+--('9786020324786', 'Belajar Flutter', 'Citra', 'Informatika', 2025, 100000);
+
+--BEGIN TRY 
+--	INSERT INTO books 
+--	(isbn, title, author, publisher, publication_year, price)
+--	VALUES 
+--	 ('8786140324784', 'Matematika Parenting', 'Basalamah', 'Gramedia', 2021, 55000);
+
+--	PRINT 'Data buku berhasil ditambahkan';
+
+--END TRY 
+
+--BEGIN CATCH 
+
+--	PRINT 'VALIDASI ERROR: Data buku sudah terdaftar atau tidak valid!';
+
+--	PRINT ERROR_MESSAGE();
+--end CATCH;
+
+--SELECT * FROM books;
+
+--UPDATE books 
+--SET title = 'Tips Main Catur Untuk Pemula'
+--WHERE id = 1;
